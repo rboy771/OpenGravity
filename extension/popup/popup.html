@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenGravity Relay Panel v2.0</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="logo">
+        <span class="icon">🌌</span>
+        <div class="title-group">
+          <span class="title">OpenGravity</span>
+          <span class="version-tag">v2.0.0</span>
+        </div>
+      </div>
+      <div class="badge" id="statusBadge">Checking...</div>
+    </div>
+
+    <div class="section">
+      <div class="info-row">
+        <span class="label">Relay Target:</span>
+        <span class="value" id="serverUrl">ws://127.0.0.1:9223</span>
+      </div>
+      <div class="info-row">
+        <span class="label">API Gateway:</span>
+        <span class="value accent">http://localhost:9224</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Agent Engine:</span>
+        <span class="value accent">Google Antigravity</span>
+      </div>
+    </div>
+
+    <div class="tab-preview-box">
+      <div class="tab-preview-header">Active Tab:</div>
+      <div class="tab-preview-title" id="activeTabTitle">Loading active tab...</div>
+      <div class="tab-preview-url" id="activeTabUrl">...</div>
+    </div>
+
+    <div class="status-box" id="statusText">
+      Attempting live handshake with OpenGravity Relay Server...
+    </div>
+
+    <div class="button-grid">
+      <button id="reconnectBtn" class="btn btn-primary">Reconnect Relay</button>
+      <button id="copyPromptBtn" class="btn btn-secondary">📋 Copy AI Prompt</button>
+      <button id="openDashboardBtn" class="btn btn-secondary">🌐 Open Dashboard</button>
+      <button id="testRoamBtn" class="btn btn-accent">✨ Test Screen Roam</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

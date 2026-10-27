@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "OpenGravity Browser Relay",
+  "version": "2.0.0",
+  "description": "OpenGravity Live Browser Relay & Autonomous AI Agent Engine for Google Antigravity. Real-time screen roaming, DOM inspection, tab switching, human-paced typing, and automated web interaction.",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting",
+    "storage",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.js"],
+      "css": ["content/content.css"],
+      "all_frames": true,
+      "match_about_blank": true,
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "OpenGravity Relay Panel",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

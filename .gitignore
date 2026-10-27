@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Production / Build Output
+dist/
+build/
+server/dist/
+
+# Environment and Secrets
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.cert
+
+# Local scratch and temporary files
+scratch/
+scratch_*
+*.tmp
+*.bak
+*.swp
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.sublime-*
+
+# User documents / CVs
+*CV*.pdf
+*cv*.pdf
+*resume*.pdf
+*Resume*.pdf

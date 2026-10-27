@@ -1,0 +1,21 @@
+{
+  "name": "opengravity",
+  "version": "1.0.0",
+  "description": "Live Browser Relay & Autonomous System Prompt Framework for Antigravity",
+  "main": "server/dist/index.js",
+  "scripts": {
+    "start": "cd server && npm start",
+    "build": "cd server && npm run build",
+    "dev": "cd server && npm run dev"
+  },
+  "keywords": [
+    "antigravity",
+    "browser-relay",
+    "open-gravity",
+    "ai-agent",
+    "mcp",
+    "chrome-extension"
+  ],
+  "author": "OpenGravity Community",
+  "license": "MIT"
+}
